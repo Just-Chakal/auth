@@ -20,9 +20,7 @@ mongoose.connection.on('err', err => {
 const userschema = mongoose.model('users', {
     UUID: String,
     username: String,
-    password: String,
-    license: String,
-    expire: String
+    password: String
 });
 
 function rdmstr(length) {
